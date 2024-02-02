@@ -71,8 +71,8 @@ function ProductTracker() {
           setProductStages(adj);
           console.log(adj);
           setBiproducts(biprods);
-        } else {
-          trackProduct(); // BUG: Temporary fix for the intermittent graphql error
+        // } else {
+        //   trackProduct(); // BUG: Temporary fix for the intermittent graphql error
         }
       });
     } catch (error) {

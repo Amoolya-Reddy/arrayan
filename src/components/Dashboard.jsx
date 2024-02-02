@@ -79,8 +79,8 @@ function Dashboard() {
           totalCount["industries"] = distinctValuesCount(json, 'Name');
             setTotalStats(prev => ({prev, totalCount}));
             setTransactionCount( prev => ({prev, totalTxns}));
-        } else {
-          fetchData(); // BUG: Temporary fix for the intermittent graphql error
+        // } else {
+        //   fetchData(); // BUG: Temporary fix for the intermittent graphql error
         }
       });
     } catch (error) {

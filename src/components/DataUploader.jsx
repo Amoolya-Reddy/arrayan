@@ -52,8 +52,8 @@ function DataUploader() {
             json.push(JSON.parse(item.asset.replace(/'/g, '"')).data);
           });
           setInventory(json);
-        } else {
-          fetchInventory(); // BUG: Temporary fix for the intermittent graphql error
+        // } else {
+        //   fetchInventory(); // BUG: Temporary fix for the intermittent graphql error
         }
       });
     } catch (error) {
